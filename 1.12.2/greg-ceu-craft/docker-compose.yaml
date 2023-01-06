@@ -6,7 +6,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: mcserver-1.12.2-GTCEuCraft
+    container_name: mcserver-1.12.2-gtceu-craft
     image: mcserver/1.12.2/gtceucraft:latest
     entrypoint: 
       - java
