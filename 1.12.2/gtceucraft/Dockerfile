@@ -1,4 +1,3 @@
-# FROM ubuntu-jre-8:352
 FROM balenalib/aarch64-alpine-openjdk:latest
 USER 1000:1000
 WORKDIR /mcserver/
