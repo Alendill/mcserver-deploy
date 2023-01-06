@@ -13,8 +13,8 @@ services:
       - -server
       - -Dfile.encoding=utf-8
       - -XshowSettings:vm
-      - -Xms6G
-      - -Xmx6G
+      - -Xms4G
+      - -Xmx4G
       - -XX:+UseG1GC
       - -XX:+UnlockExperimentalVMOptions
       - -XX:G1HeapRegionSize=16m
