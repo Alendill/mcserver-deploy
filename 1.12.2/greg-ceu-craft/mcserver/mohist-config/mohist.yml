@@ -42,7 +42,7 @@ mohist:
   server-type: FML
   BukkitPermissionsHandler: true
   connectionTimeout: 15000
-  lang: xx_XX
+  lang: en_US
   libraries_downloadsource: CHINA
   console_name: Server
   watchdog_spigot: true

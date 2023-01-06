@@ -1,0 +1,64 @@
+lastlocation:
+  world: world
+  x: -94.50189843765828
+  y: 79.27574279280941
+  z: 585.2418055759512
+  yaw: 148.32397
+  pitch: 16.555445
+lastAccountName: GTO
+timestamps:
+  login: 1623418696196
+  logout: 1623421403858
+  lastteleport: 1623160679167
+ipAddress: 127.0.0.1
+logoutlocation:
+  world: world
+  x: -100.86091211678854
+  y: 66.0
+  z: 681.3000000119209
+  yaw: 124.70477
+  pitch: 67.10678
+homes:
+  shanqiu:
+    world: world
+    x: -39.0484826815556
+    y: 62.0
+    z: 230.59444771489015
+    yaw: 46.47489
+    pitch: 18.651356
+  citie:
+    world: world
+    x: -71.52666216871378
+    y: 65.0
+    z: 11.884731008633286
+    yaw: -10.5373535
+    pitch: 22.578577
+  citie2:
+    world: world
+    x: -53.62793964732367
+    y: 64.0
+    z: -701.2101728765168
+    yaw: 217.92384
+    pitch: -5.291457
+  aiji:
+    world: world
+    x: -1476.8030529458827
+    y: 65.0
+    z: 31.087299017210132
+    yaw: 287.92133
+    pitch: 9.847532
+  baofeng:
+    world: world
+    x: -190.16821356302242
+    y: 70.0
+    z: 428.9204870791358
+    yaw: 248.98315
+    pitch: 19.542347
+  jidi:
+    world: world
+    x: -152.37530339345474
+    y: 60.0
+    z: 401.7596116382494
+    yaw: -127.7941
+    pitch: 21.371115
+afk: false
