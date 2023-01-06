@@ -6,15 +6,15 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: mcserver-1.12.2-gtceu-craft
+    container_name: mcserver-1.12.2-gtceucraft
     image: mcserver/1.12.2/gtceucraft:latest
     entrypoint: 
       - java
       - -server
       - -Dfile.encoding=utf-8
       - -XshowSettings:vm
-      - -Xms5G
-      - -Xmx5G
+      - -Xms6G
+      - -Xmx6G
       - -XX:+UseG1GC
       - -XX:+UnlockExperimentalVMOptions
       - -XX:G1HeapRegionSize=16m
