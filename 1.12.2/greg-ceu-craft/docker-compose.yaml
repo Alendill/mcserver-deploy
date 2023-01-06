@@ -1,0 +1,59 @@
+version: "3"
+
+services:
+
+  mcserver:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: mcserver-1.12.2-GTCEuCraft
+    image: mcserver/1.12.2/gtceucraft:latest
+    entrypoint: 
+      - java
+      - -server
+      - -Dfile.encoding=utf-8
+      - -XshowSettings:vm
+      - -Xms5G
+      - -Xmx5G
+      - -XX:+UseG1GC
+      - -XX:+UnlockExperimentalVMOptions
+      - -XX:G1HeapRegionSize=16m
+      - -XX:+DisableExplicitGC
+      - -XX:TargetSurvivorRatio=90
+      - -XX:G1NewSizePercent=50
+      - -XX:G1MaxNewSizePercent=80
+      - -XX:G1MixedGCLiveThresholdPercent=35
+      - -XX:+AlwaysPreTouch
+      - -XX:+ParallelRefProcEnabled
+      - -jar
+      - /mcserver/mohist-server.jar
+    volumes:
+      - /sandisk/volumes/mcserver/1.12.2/greg-ceu-craft/world/:/mcserver/world/
+      - /sandisk/volumes/mcserver/1.12.2/greg-ceu-craft/logs/:/mcserver/logs/
+      - /sandisk/volumes/mcserver/1.12.2/greg-ceu-craft/mods/:/mcserver/mods/
+      - /sandisk/volumes/mcserver/1.12.2/greg-ceu-craft/plugins/:/mcserver/plugins/
+      - /sandisk/volumes/mcserver/1.12.2/greg-ceu-craft/config/:/mcserver/config/
+      - /sandisk/volumes/mcserver/1.12.2/greg-ceu-craft/backups/:/mcserver/backups/
+      - /sandisk/volumes/mcserver/1.12.2/greg-ceu-craft/journeymap/:/mcserver/journeymap/
+      - /sandisk/volumes/mcserver/1.12.2/greg-ceu-craft/mohist-config/:/mcserver/mohist-config/
+      - /sandisk/volumes/mcserver/1.12.2/greg-ceu-craft/server.properties:/mcserver/server.properties
+      - /sandisk/volumes/mcserver/1.12.2/greg-ceu-craft/ops.json:/mcserver/ops.json
+      - /sandisk/volumes/mcserver/1.12.2/greg-ceu-craft/banned-ips.json:/mcserver/banned-ips.json
+      - /sandisk/volumes/mcserver/1.12.2/greg-ceu-craft/banned-players.json:/mcserver/banned-players.json
+      - /sandisk/volumes/mcserver/1.12.2/greg-ceu-craft/paper.yml:/mcserver/paper.yml
+      - /sandisk/volumes/mcserver/1.12.2/greg-ceu-craft/permissions.yml:/mcserver/permissions.yml
+      - /sandisk/volumes/mcserver/1.12.2/greg-ceu-craft/whitelist.json:/mcserver/whitelist.json
+      - /sandisk/volumes/mcserver/1.12.2/greg-ceu-craft/usercache.json:/mcserver/usercache.json
+      - /sandisk/volumes/mcserver/1.12.2/greg-ceu-craft/usernamecache.json:/mcserver/usernamecache.json
+      - /sandisk/volumes/mcserver/1.12.2/greg-ceu-craft/bukkit.yml:/mcserver/bukkit.yml
+      - /sandisk/volumes/mcserver/1.12.2/greg-ceu-craft/spigot.yml:/mcserver/spigot.yml
+      - /sandisk/volumes/mcserver/1.12.2/greg-ceu-craft/commands.yml:/mcserver/commands.yml
+      - /sandisk/volumes/mcserver/1.12.2/greg-ceu-craft/help.yml:/mcserver/help.yml
+      - /sandisk/volumes/mcserver/1.12.2/greg-ceu-craft/eula.txt:/mcserver/eula.txt
+    ports:
+      - "26947:26947"
+    restart: unless-stopped
+    network_mode: "bridge"
+    stdin_open: true
+    tty: true
+    privileged: true
