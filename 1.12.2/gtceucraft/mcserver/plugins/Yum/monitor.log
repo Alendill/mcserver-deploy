@@ -861,3 +861,11 @@ Jan 7, 2023 11:29:44 AM[Yum 能耗监控] 注意! 插件 ProtocolLib 处理 Play
 Jan 7, 2023 11:29:44 AM[Yum 能耗监控] 注意! 插件 GroupManager 处理 PlayerLoginEvent 事件 耗时 214ms 平均耗时 214ms!
 Jan 7, 2023 11:29:47 AM[Yum 能耗监控] 注意! 插件 NeverLag 处理 PlayerJoinEvent 事件 耗时 27ms 平均耗时 27ms!
 Jan 7, 2023 11:29:48 AM[Yum 能耗监控] 注意! 插件 Essentials 处理 PlayerTeleportEvent 事件 耗时 154ms 平均耗时 154ms!
+Jan 7, 2023 11:43:34 AM[Yum 能耗监控] 注意! 插件 Essentials 处理 StandardPaperServerListPingEventImpl 事件 耗时 23ms 平均耗时 23ms!
+Jan 7, 2023 11:43:34 AM[Yum 能耗监控] 注意! 插件 Essentials 处理 StandardPaperServerListPingEventImpl 事件 耗时 46ms 平均耗时 35ms!
+Jan 7, 2023 11:43:34 AM[Yum 能耗监控] 注意! 插件 Essentials 处理 StandardPaperServerListPingEventImpl 事件 耗时 49ms 平均耗时 39ms!
+Jan 7, 2023 11:43:34 AM[Yum 能耗监控] 注意! 插件 Essentials 处理 StandardPaperServerListPingEventImpl 事件 耗时 51ms 平均耗时 42ms!
+Jan 7, 2023 11:43:42 AM[Yum 能耗监控] 注意! 插件 ProtocolLib 处理 PlayerLoginEvent 事件 耗时 320ms 平均耗时 320ms!
+Jan 7, 2023 11:43:42 AM[Yum 能耗监控] 注意! 插件 GroupManager 处理 PlayerLoginEvent 事件 耗时 244ms 平均耗时 244ms!
+Jan 7, 2023 11:43:45 AM[Yum 能耗监控] 注意! 插件 Multiverse-Core 处理 PlayerJoinEvent 事件 耗时 33ms 平均耗时 33ms!
+Jan 7, 2023 11:43:46 AM[Yum 能耗监控] 注意! 插件 Essentials 处理 PlayerTeleportEvent 事件 耗时 321ms 平均耗时 321ms!
