@@ -28,13 +28,14 @@ services:
       - -jar
       - /mcserver/mohist-server.jar
     volumes:
+      ###Big files and logs###
       - ${BIG_FILE_PATH}/world/:/mcserver/world/
       - ${BIG_FILE_PATH}/backups/:/mcserver/backups/
       - ${BIG_FILE_PATH}/logs/:/mcserver/logs/
       - ${BIG_FILE_PATH}/libraries/:/mcserver/libraries/
       - ${BIG_FILE_PATH}/mods/:/mcserver/mods/
       - ${BIG_FILE_PATH}/journeymap/:/mcserver/journeymap/
-      ###
+      ###Files from GitHub###
       - ${GIT_FILE_PATH}/plugins/:/mcserver/plugins/
       - ${GIT_FILE_PATH}/config/:/mcserver/config/
       - ${GIT_FILE_PATH}/mohist-config/:/mcserver/mohist-config/
