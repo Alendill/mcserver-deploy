@@ -869,3 +869,8 @@ Jan 7, 2023 11:43:42 AM[Yum 能耗监控] 注意! 插件 ProtocolLib 处理 Play
 Jan 7, 2023 11:43:42 AM[Yum 能耗监控] 注意! 插件 GroupManager 处理 PlayerLoginEvent 事件 耗时 244ms 平均耗时 244ms!
 Jan 7, 2023 11:43:45 AM[Yum 能耗监控] 注意! 插件 Multiverse-Core 处理 PlayerJoinEvent 事件 耗时 33ms 平均耗时 33ms!
 Jan 7, 2023 11:43:46 AM[Yum 能耗监控] 注意! 插件 Essentials 处理 PlayerTeleportEvent 事件 耗时 321ms 平均耗时 321ms!
+Jan 7, 2023 1:13:20 PM[Yum 能耗监控] 注意! 插件 Yum 处理 pw.yumc.Yum.listeners.PluginListener$1 任务 耗时 25ms 平均耗时 25ms!
+Jan 7, 2023 1:13:20 PM[Yum 能耗监控] 注意! 插件 Yum 处理 pw.yumc.Yum.listeners.PluginListener$1 任务 耗时 24ms 平均耗时 24ms!
+Jan 7, 2023 1:14:09 PM[Yum 能耗监控] 注意! 插件 ProtocolLib 处理 PlayerLoginEvent 事件 耗时 288ms 平均耗时 288ms!
+Jan 7, 2023 1:14:09 PM[Yum 能耗监控] 注意! 插件 GroupManager 处理 PlayerLoginEvent 事件 耗时 214ms 平均耗时 214ms!
+Jan 7, 2023 1:14:13 PM[Yum 能耗监控] 注意! 插件 Essentials 处理 PlayerTeleportEvent 事件 耗时 221ms 平均耗时 221ms!
