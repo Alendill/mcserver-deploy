@@ -857,3 +857,7 @@ Jan 7, 2023 10:58:13 AM[Yum 能耗监控] 注意! 插件 Essentials 处理 Playe
 Jan 7, 2023 10:58:33 AM[Yum 能耗监控] 注意! 玩家 CONSOLE 执行 GroupManager 插件 manuadd Pleiades builder 命令 耗时 28ms 平均耗时 28ms!
 Jan 7, 2023 11:01:34 AM[Yum 能耗监控] 注意! 插件 Essentials 处理 BlockPlaceEvent 事件 耗时 82ms 平均耗时 82ms!
 Jan 7, 2023 11:27:39 AM[Yum 能耗监控] 注意! 插件 Yum 处理 pw.yumc.Yum.listeners.PluginListener$1 任务 耗时 40ms 平均耗时 40ms!
+Jan 7, 2023 11:29:44 AM[Yum 能耗监控] 注意! 插件 ProtocolLib 处理 PlayerLoginEvent 事件 耗时 294ms 平均耗时 294ms!
+Jan 7, 2023 11:29:44 AM[Yum 能耗监控] 注意! 插件 GroupManager 处理 PlayerLoginEvent 事件 耗时 214ms 平均耗时 214ms!
+Jan 7, 2023 11:29:47 AM[Yum 能耗监控] 注意! 插件 NeverLag 处理 PlayerJoinEvent 事件 耗时 27ms 平均耗时 27ms!
+Jan 7, 2023 11:29:48 AM[Yum 能耗监控] 注意! 插件 Essentials 处理 PlayerTeleportEvent 事件 耗时 154ms 平均耗时 154ms!
