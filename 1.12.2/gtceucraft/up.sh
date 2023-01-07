@@ -1,1 +1,1 @@
-docker-compose up -d
+BIG_FILE_PATH="/sandisk/volumes/mcserver/1.12.2/gtceucraft" GIT_FILE_PATH="/home/ubuntu/mcserver-deploy/1.12.2/gtceucraft/mcserver" docker-compose up -d
