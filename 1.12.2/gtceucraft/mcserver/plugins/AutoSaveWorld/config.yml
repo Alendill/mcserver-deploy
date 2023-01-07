@@ -151,5 +151,5 @@ worldregen:
   savepstones: true
 networkwatcher:
   mainthreadnetaccess:
-    warn: true
+    warn: false
     interrupt: false

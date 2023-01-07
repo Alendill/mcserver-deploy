@@ -12,7 +12,14 @@
 verbose: false
 config-version: 13
 settings:
+  bungee-online-mode: true
+  save-player-data: true
+  use-alternative-luck-formula: false
+  min-chunk-load-threads: 2
   suggest-player-names-when-null-tab-completions: true
+  spam-limiter:
+    tab-spam-increment: 10
+    tab-spam-limit: 500
   book-size:
     page-max: 2560
     total-multiplier: 0.98
@@ -25,18 +32,6 @@ settings:
   player-auto-save-rate: -1
   max-player-auto-save-per-tick: -1
   remove-invalid-statistics: false
-  use-alternative-luck-formula: false
-  min-chunk-load-threads: 2
-  spam-limiter:
-    tab-spam-increment: 10
-    tab-spam-limit: 500
-  save-player-data: true
-  bungee-online-mode: true
-messages:
-  kick:
-    authentication-servers-down: ''
-    flying-player: Flying is not enabled on this server
-    flying-vehicle: Flying is not enabled on this server
 timings:
   enabled: true
   verbose: true
@@ -46,4 +41,9 @@ timings:
   - settings.bungeecord-addresses
   history-interval: 300
   history-length: 3600
+messages:
+  kick:
+    flying-player: Flying is not enabled on this server
+    flying-vehicle: Flying is not enabled on this server
+    authentication-servers-down: ''
 queue-light-updates: false
