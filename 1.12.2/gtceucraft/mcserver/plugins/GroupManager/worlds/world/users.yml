@@ -9,8 +9,3 @@ users:
     group: Builder
     subgroups: []
     permissions: []
-  de03fbcd-0a76-353f-a7ab-59fccd0c6717:
-    lastname: Serp
-    group: Builder
-    subgroups: []
-    permissions: []

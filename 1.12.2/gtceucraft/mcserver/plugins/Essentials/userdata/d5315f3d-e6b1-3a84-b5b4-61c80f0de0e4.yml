@@ -1,26 +1,26 @@
 lastAccountName: Pleiades
 timestamps:
-  login: 1673165716641
-  logout: 1673155388929
-  lastteleport: 1673147556910
+  login: 1673188400716
+  logout: 1673170106131
+  lastteleport: 1673181802267
   kits:
     tools: 1670297119778
 ipAddress: 192.168.0.106
 lastlocation:
-  world: DIM-1
-  x: -49.080137604904635
-  y: 76.0
-  z: -92.30000001192093
-  yaw: 159.48215
-  pitch: 45.267147
+  world: world
+  x: -1883.9020601537409
+  y: 68.0
+  z: 762.2681938312112
+  yaw: 190.49585
+  pitch: -0.48524487
 logoutlocation:
   world: world
-  x: -37.5285408631794
-  y: 77.0
-  z: -238.2643945516837
-  yaw: 92.8443
-  pitch: 17.203451
-afk: true
+  x: -45.58343777904323
+  y: 71.0
+  z: -237.97761519979113
+  yaw: 180.01685
+  pitch: 32.049793
+afk: false
 homes:
   home:
     world: world
@@ -57,13 +57,6 @@ homes:
     z: 0.7428622766133678
     yaw: -136.48273
     pitch: 18.40046
-  bedrock:
-    world: world
-    x: 218.30000001192093
-    y: 3.0
-    z: -170.30000001192093
-    yaw: 267.07117
-    pitch: 32.181507
   mmmmmm:
     world: world
     x: 778.5
@@ -99,17 +92,10 @@ homes:
     z: 104.03764341757976
     yaw: 78.197876
     pitch: 21.775751
-  oil_1:
-    world: world
-    x: 296.538795596987
-    y: 48.0
-    z: -912.2241669293782
-    yaw: 10.490118
-    pitch: 25.556896
   oil:
     world: world
-    x: -2048.0812281738463
-    y: 26.0
-    z: 1021.4668413135594
-    yaw: 12.9227295
-    pitch: 24.249634
+    x: -1884.300000011921
+    y: 75.0
+    z: 764.7217607030153
+    yaw: 267.28174
+    pitch: 51.01185

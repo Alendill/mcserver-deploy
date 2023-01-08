@@ -37,7 +37,7 @@ groups:
       build: true
       prefix: '&2'
       suffix: ''
-  Default:
+  Guest:
     default: true
     permissions:
     - -bukkit.command.kill
