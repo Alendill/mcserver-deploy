@@ -121,7 +121,7 @@ drop-items-if-full: false
 
 # Essentials Mail Notification
 # Should we notify players if they have no new mail?
-notify-no-new-mail: true
+notify-no-new-mail: false
 
 # Specifies the duration (in seconds) between each time a player is notified of mail they have.
 # Useful for servers with a lot of mail traffic.
@@ -660,8 +660,9 @@ chat:
   #format: '&7{PREFIX}&r {DISPLAYNAME}&r &7{SUFFIX}&r: {MESSAGE}'
 
   group-formats:
-  #  Default: '{WORLDNAME} {DISPLAYNAME}&7:&r {MESSAGE}'
-  #  Admins: '{WORLDNAME} &c[{GROUP}]&r {DISPLAYNAME}&7:&c {MESSAGE}'
+    # Guest: '{WORLDNAME} {DISPLAYNAME}&7:&r {MESSAGE}'
+    # Builder: '{WORLDNAME} {DISPLAYNAME}&7:&r {MESSAGE}'
+    # Admins: '{WORLDNAME} &c[{GROUP}]&r {DISPLAYNAME}&7:&c {MESSAGE}'
 
   # If you are using group formats make sure to remove the '#' to allow the setting to be read.
 
@@ -685,10 +686,10 @@ protect:
     flint-fire: false
     lightning-fire-spread: true
     portal-creation: false
-    tnt-explosion: false
+    tnt-explosion: true
     tnt-playerdamage: false
-    tnt-minecart-explosion: false
-    tnt-minecart-playerdamage: false
+    tnt-minecart-explosion: true
+    tnt-minecart-playerdamage: true
     fireball-explosion: false
     fireball-fire: false
     fireball-playerdamage: false
@@ -696,12 +697,12 @@ protect:
     witherskull-playerdamage: false
     wither-spawnexplosion: false
     wither-blockreplace: false
-    creeper-explosion: false
+    creeper-explosion: true
     creeper-playerdamage: false
-    creeper-blockdamage: false
+    creeper-blockdamage: true
     enderdragon-blockdamage: true
-    enderman-pickup: false
-    villager-death: false
+    enderman-pickup: true
+    villager-death: true
     # Monsters won't follow players.
     # permission essentials.protect.entitytarget.bypass disables this.
     entitytarget: false
@@ -740,7 +741,7 @@ protect:
   # Maximum height the creeper should explode. -1 allows them to explode everywhere.
   # Set prevent.creeper-explosion to true, if you want to disable creeper explosions.
   creeper:
-    max-height: -1
+    max-height: 60
 
   # Disable various default physics and behaviors.
   disable:

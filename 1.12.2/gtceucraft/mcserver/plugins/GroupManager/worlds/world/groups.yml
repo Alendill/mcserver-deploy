@@ -26,11 +26,12 @@ groups:
   Builder:
     default: false
     permissions: 
+    - essentials.build.*
     - essentials.tp
     - essentials.tp.others
     - bukkit.command.tps
     inheritance:
-    - default
+    - Guest
     - g:essentials_builder
     - g:towny_builder
     info:
@@ -47,7 +48,7 @@ groups:
     - g:essentials_default
     - g:towny_default
     info:
-      build: false
+      build: true
       prefix: '&e'
       suffix: ''
   Moderator:

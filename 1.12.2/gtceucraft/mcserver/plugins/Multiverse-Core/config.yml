@@ -20,7 +20,7 @@ multiverse-configuration:
   enforceaccess: 'false'
   prefixchat: 'true'
   prefixchatformat: '[%world%]%chat%'
-  useasyncchat: 'true'
+  useasyncchat: 'false'
   teleportintercept: 'true'
   firstspawnoverride: 'true'
   displaypermerrors: 'true'
