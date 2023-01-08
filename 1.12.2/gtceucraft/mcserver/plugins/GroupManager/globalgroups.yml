@@ -172,7 +172,7 @@ groups:
     - essentials.signs.break.mail
     - essentials.signs.break.protection
     - essentials.signs.break.trade
-    - essentials.suicide
+    - -essentials.suicide # Disabled by Pleiades
     - essentials.time
     - essentials.tpa
     - essentials.tpaccept
