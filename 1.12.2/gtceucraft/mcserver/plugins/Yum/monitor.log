@@ -874,3 +874,19 @@ Jan 7, 2023 1:13:20 PM[Yum 能耗监控] 注意! 插件 Yum 处理 pw.yumc.Yum.l
 Jan 7, 2023 1:14:09 PM[Yum 能耗监控] 注意! 插件 ProtocolLib 处理 PlayerLoginEvent 事件 耗时 288ms 平均耗时 288ms!
 Jan 7, 2023 1:14:09 PM[Yum 能耗监控] 注意! 插件 GroupManager 处理 PlayerLoginEvent 事件 耗时 214ms 平均耗时 214ms!
 Jan 7, 2023 1:14:13 PM[Yum 能耗监控] 注意! 插件 Essentials 处理 PlayerTeleportEvent 事件 耗时 221ms 平均耗时 221ms!
+Jan 7, 2023 1:26:58 PM[Yum 能耗监控] 注意! 插件 Essentials 处理 BlockPlaceEvent 事件 耗时 74ms 平均耗时 74ms!
+Jan 7, 2023 8:15:57 PM[Yum 能耗监控] 注意! 玩家 CONSOLE 执行 Yum 插件 yum help 命令 耗时 188ms 平均耗时 45ms!
+Jan 8, 2023 5:05:01 AM[Yum 能耗监控] 注意! 插件 Yum 处理 pw.yumc.Yum.listeners.PluginListener$1 任务 耗时 36ms 平均耗时 36ms!
+Jan 8, 2023 9:45:19 AM[Yum 能耗监控] 注意! 插件 ProtocolLib 处理 PlayerLoginEvent 事件 耗时 377ms 平均耗时 377ms!
+Jan 8, 2023 9:45:19 AM[Yum 能耗监控] 注意! 插件 GroupManager 处理 PlayerLoginEvent 事件 耗时 241ms 平均耗时 241ms!
+Jan 8, 2023 9:45:23 AM[Yum 能耗监控] 注意! 插件 Essentials 处理 PlayerTeleportEvent 事件 耗时 204ms 平均耗时 204ms!
+Jan 8, 2023 10:53:58 AM[Yum 能耗监控] 注意! 插件 Essentials 处理 BlockPlaceEvent 事件 耗时 115ms 平均耗时 115ms!
+Jan 8, 2023 11:11:03 AM[Yum 能耗监控] 注意! 插件 GroupManager 处理 PlayerChangedWorldEvent 事件 耗时 74ms 平均耗时 74ms!
+Jan 8, 2023 11:12:24 AM[Yum 能耗监控] 注意! 插件 GroupManager 处理 PlayerChangedWorldEvent 事件 耗时 22ms 平均耗时 33ms!
+Jan 8, 2023 2:22:09 PM[Yum 能耗监控] 注意! 插件 Yum 处理 pw.yumc.Yum.listeners.PluginListener$1 任务 耗时 26ms 平均耗时 26ms!
+Jan 8, 2023 2:22:09 PM[Yum 能耗监控] 注意! 插件 Yum 处理 pw.yumc.Yum.listeners.PluginListener$1 任务 耗时 25ms 平均耗时 25ms!
+Jan 8, 2023 4:15:11 PM[Yum 能耗监控] 注意! 插件 ProtocolLib 处理 PlayerLoginEvent 事件 耗时 380ms 平均耗时 380ms!
+Jan 8, 2023 4:15:11 PM[Yum 能耗监控] 注意! 插件 GroupManager 处理 PlayerLoginEvent 事件 耗时 302ms 平均耗时 302ms!
+Jan 8, 2023 4:15:15 PM[Yum 能耗监控] 注意! 插件 Essentials 处理 PlayerTeleportEvent 事件 耗时 155ms 平均耗时 155ms!
+Jan 8, 2023 4:18:31 PM[Yum 能耗监控] 注意! 插件 Essentials 处理 BlockPlaceEvent 事件 耗时 70ms 平均耗时 70ms!
+Jan 8, 2023 5:06:02 PM[Yum 能耗监控] 注意! 插件 Essentials 处理 PlayerTeleportEvent 事件 耗时 38ms 平均耗时 97ms!

@@ -11,15 +11,6 @@
 
 verbose: false
 config-version: 13
-timings:
-  enabled: true
-  verbose: true
-  server-name-privacy: false
-  hidden-config-entries:
-  - database
-  - settings.bungeecord-addresses
-  history-interval: 300
-  history-length: 3600
 settings:
   bungee-online-mode: true
   sleep-between-chunk-saves: false
@@ -41,6 +32,15 @@ settings:
   book-size:
     page-max: 2560
     total-multiplier: 0.98
+timings:
+  enabled: true
+  verbose: true
+  server-name-privacy: false
+  hidden-config-entries:
+  - database
+  - settings.bungeecord-addresses
+  history-interval: 300
+  history-length: 3600
 messages:
   kick:
     authentication-servers-down: ''

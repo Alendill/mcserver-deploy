@@ -1,25 +1,25 @@
 lastAccountName: Pleiades
 timestamps:
-  login: 1673068453895
-  logout: 1673061071594
-  lastteleport: 1673060641409
+  login: 1673165716641
+  logout: 1673155388929
+  lastteleport: 1673147556910
   kits:
     tools: 1670297119778
 ipAddress: 192.168.0.106
 lastlocation:
-  world: world
-  x: -43.84387987020646
-  y: 71.0
-  z: -238.77219842115662
-  yaw: 175.54164
-  pitch: 23.242683
+  world: DIM-1
+  x: -49.080137604904635
+  y: 76.0
+  z: -92.30000001192093
+  yaw: 159.48215
+  pitch: 45.267147
 logoutlocation:
   world: world
-  x: -42.65567712104282
-  y: 71.0
-  z: -238.2729258683621
-  yaw: 181.46046
-  pitch: 3.875887
+  x: -37.5285408631794
+  y: 77.0
+  z: -238.2643945516837
+  yaw: 92.8443
+  pitch: 17.203451
 afk: false
 homes:
   home:
@@ -108,8 +108,8 @@ homes:
     pitch: 25.556896
   oil:
     world: world
-    x: -2047.5453595294705
-    y: 80.59375
-    z: 1023.480950395916
-    yaw: -99.63778
-    pitch: 57.171913
+    x: -2048.0812281738463
+    y: 26.0
+    z: 1021.4668413135594
+    yaw: 12.9227295
+    pitch: 24.249634
