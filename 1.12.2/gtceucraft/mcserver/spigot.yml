@@ -12,7 +12,14 @@
 
 config-version: 11
 settings:
+  player-shuffle: 0
   bungeecord: false
+  filter-creative-items: true
+  int-cache-limit: 1024
+  moved-wrongly-threshold: 0.0625
+  moved-too-quickly-multiplier: 10.0
+  item-dirty-ticks: 20
+  netty-threads: 4
   attribute:
     maxHealth:
       max: 2048.0
@@ -20,25 +27,18 @@ settings:
       max: 2048.0
     attackDamage:
       max: 2048.0
+  user-cache-size: 1000
   late-bind: false
-  player-shuffle: 0
-  filter-creative-items: true
-  int-cache-limit: 1024
-  moved-wrongly-threshold: 0.0625
-  moved-too-quickly-multiplier: 10.0
-  item-dirty-ticks: 20
-  netty-threads: 4
+  save-user-cache-on-stop-only: false
+  sample-count: 12
   timeout-time: 90
   restart-on-crash: true
   restart-script: ./start.sh
-  sample-count: 12
-  save-user-cache-on-stop-only: false
-  user-cache-size: 1000
 stats:
   disable-saving: false
   forced-stats: {}
 commands:
-  silent-commandblock-console: false
+  log: true
   spam-exclusions:
   - /skill
   replace-commands:
@@ -46,25 +46,19 @@ commands:
   - summon
   - testforblock
   - tellraw
-  log: true
+  silent-commandblock-console: false
   tab-complete: 0
-messages:
-  restart: Server is restarting
 advancements:
   disable-saving: false
   disabled:
   - minecraft:story/disabled
+messages:
+  restart: Server is restarting
 world-settings:
   default:
     verbose: true
     wither-spawn-sound-radius: 0
     view-distance: 5
-    enable-zombie-pigmen-portal-spawns: true
-    merge-radius:
-      item: 2.5
-      exp: 3.0
-    item-despawn-rate: 6000
-    nerf-spawner-mobs: false
     entity-tracking-range:
       players: 48
       animals: 48
@@ -73,7 +67,35 @@ world-settings:
       other: 64
     arrow-despawn-rate: 1200
     hanging-tick-frequency: 100
+    merge-radius:
+      exp: 3.0
+      item: 2.5
+    nerf-spawner-mobs: false
+    enable-zombie-pigmen-portal-spawns: true
     zombie-aggressive-towards-villager: true
+    item-despawn-rate: 6000
+    dragon-death-sound-radius: 0
+    seed-village: 10387312
+    seed-feature: 14357617
+    seed-monument: 10387313
+    seed-slime: 987234911
+    hunger:
+      jump-walk-exhaustion: 0.05
+      jump-sprint-exhaustion: 0.2
+      combat-exhaustion: 0.1
+      regen-exhaustion: 6.0
+      swim-multiplier: 0.01
+      sprint-multiplier: 0.1
+      other-multiplier: 0.0
+    max-tnt-per-tick: 100
+    max-tick-time:
+      tile: 1000
+      entity: 1000
+    squid-spawn-range:
+      min: 45.0
+    max-growth-height:
+      cactus: 3
+      reeds: 3
     mob-spawn-range: 4
     growth:
       cactus-modifier: 100
@@ -98,25 +120,3 @@ world-settings:
     hopper-amount: 1
     random-light-updates: false
     save-structure-info: true
-    dragon-death-sound-radius: 0
-    seed-village: 10387312
-    seed-feature: 14357617
-    seed-monument: 10387313
-    seed-slime: 987234911
-    hunger:
-      jump-walk-exhaustion: 0.05
-      jump-sprint-exhaustion: 0.2
-      combat-exhaustion: 0.1
-      regen-exhaustion: 6.0
-      swim-multiplier: 0.01
-      sprint-multiplier: 0.1
-      other-multiplier: 0.0
-    max-tnt-per-tick: 100
-    max-tick-time:
-      tile: 1000
-      entity: 1000
-    squid-spawn-range:
-      min: 45.0
-    max-growth-height:
-      cactus: 3
-      reeds: 3
