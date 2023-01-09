@@ -28,11 +28,9 @@ services:
       - -XX:MaxGCPauseMillis=100
       - -XX:+ExplicitGCInvokesConcurrent
       - -XX:+ExplicitGCInvokesConcurrentAndUnloadsClasses
-      ##---------##
       - -XX:+UseFastAccessorMethods
       - -XX:+DisableExplicitGC
       - -XX:TargetSurvivorRatio=90
-      ##---------##
       ##################################################
       ################### G1GC Config ##################
       # - -XX:+UseG1GC
