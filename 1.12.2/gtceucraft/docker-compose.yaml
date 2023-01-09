@@ -14,17 +14,47 @@ services:
       - -XshowSettings:vm
       - -Xms4G
       - -Xmx4G
-      - -XX:+UseG1GC
-      - -XX:+UnlockExperimentalVMOptions
-      - -XX:G1HeapRegionSize=32m
+      - -Xss256K
+      ################### CMS Config ###################
+      - -XX:+UseConcMarkSweepGC
+      - -XX:ParallelGCThreads=4
+      - -XX:ConcGCThreads=1
+      - -XX:+CMSClassUnloadingEnabled
+      - -XX:+CMSIncrementalMode
+      - -XX:+CMSScavengeBeforeRemark
+      - -XX:+UseCMSInitiatingOccupancyOnly
+      - -XX:CMSInitiatingOccupancyFraction=70
+      - -XX:CMSFullGCsBeforeCompaction=5
+      - -XX:MaxGCPauseMillis=100
+      - -XX:+ExplicitGCInvokesConcurrent
+      - -XX:+ExplicitGCInvokesConcurrentAndUnloadsClasses
+      ##---------##
+      - -XX:+UseFastAccessorMethods
       - -XX:+DisableExplicitGC
       - -XX:TargetSurvivorRatio=90
-      - -XX:G1NewSizePercent=60
-      - -XX:G1MaxNewSizePercent=80
-      - -XX:G1MixedGCLiveThresholdPercent=35
-      - -XX:+AlwaysPreTouch
-      - -XX:+ParallelRefProcEnabled
-      - -XX:+UseStringDeduplication #
+      ##---------##
+      ##################################################
+      ################### G1GC Config ##################
+      # - -XX:+UseG1GC
+      # - -XX:+UnlockExperimentalVMOptions
+      # - -XX:G1HeapRegionSize=32m
+      # - -XX:+DisableExplicitGC
+      # - -XX:TargetSurvivorRatio=80
+      # - -XX:G1NewSizePercent=50
+      # - -XX:G1MaxNewSizePercent=80
+      # - -XX:G1MixedGCLiveThresholdPercent=35
+      # - -XX:+AlwaysPreTouch
+      # - -XX:+ParallelRefProcEnabled
+      # - -XX:+UseStringDeduplication # Testing
+      ################################################
+      # - -XX:+PrintGCApplicationStoppedTime
+      # - -XX:+PrintTenuringDistribution
+      # - -XX:+PrintPromotionFailure
+      # - -XX:+PrintGCTimeStamps
+      # - -XX:+PrintGCDetails
+      # - -XX:+PrintGCDateStamps
+      # - -XX:+PrintHeapAtGC
+      ################################################
       - -Dfile.encoding=utf-8
       - -jar
       - mohist-server.jar
@@ -39,6 +69,7 @@ services:
       ###Files from GitHub###
       - ${GIT_FILE_PATH}/plugins/:/mcserver/plugins/
       - ${GIT_FILE_PATH}/config/:/mcserver/config/
+      - ${GIT_FILE_PATH}/crash-reports/:/mcserver/crash-reports/
       - ${GIT_FILE_PATH}/mohist-config/:/mcserver/mohist-config/
       - ${GIT_FILE_PATH}/server.properties:/mcserver/server.properties
       - ${GIT_FILE_PATH}/ops.json:/mcserver/ops.json
@@ -53,21 +84,13 @@ services:
       - ${GIT_FILE_PATH}/spigot.yml:/mcserver/spigot.yml
       - ${GIT_FILE_PATH}/commands.yml:/mcserver/commands.yml
       - ${GIT_FILE_PATH}/help.yml:/mcserver/help.yml
-      - ${GIT_FILE_PATH}/eula.txt:/mcserver/eula.txt
+      - ${GIT_FILE_PATH}/eula.txt:/mcserver/eula.txt:ro
     ports:
       - "26947:26947"
-    restart: on-failure
+    deploy:
+      restart_policy:
+        condition: on-failure
     network_mode: "bridge"
     stdin_open: true
     tty: true
     privileged: true
-    deploy:
-      update_config:
-        parallelism: 1
-        delay: 5s
-        order: stop-first
-      restart_policy:
-        condition: on-failure
-        delay: 5s
-        max_attempts: 4
-        window: 120s
