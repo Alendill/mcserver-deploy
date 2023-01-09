@@ -11,20 +11,21 @@ services:
     entrypoint: 
       - java
       - -server
-      - -Dfile.encoding=utf-8
       - -XshowSettings:vm
       - -Xms4G
       - -Xmx4G
       - -XX:+UseG1GC
       - -XX:+UnlockExperimentalVMOptions
-      - -XX:G1HeapRegionSize=16m
+      - -XX:G1HeapRegionSize=32m
       - -XX:+DisableExplicitGC
       - -XX:TargetSurvivorRatio=90
-      - -XX:G1NewSizePercent=50
+      - -XX:G1NewSizePercent=60
       - -XX:G1MaxNewSizePercent=80
       - -XX:G1MixedGCLiveThresholdPercent=35
       - -XX:+AlwaysPreTouch
       - -XX:+ParallelRefProcEnabled
+      - -XX:+UseStringDeduplication #
+      - -Dfile.encoding=utf-8
       - -jar
       - mohist-server.jar
     volumes:
@@ -55,7 +56,7 @@ services:
       - ${GIT_FILE_PATH}/eula.txt:/mcserver/eula.txt
     ports:
       - "26947:26947"
-    restart: unless-stopped
+    restart: on-failure
     network_mode: "bridge"
     stdin_open: true
     tty: true

@@ -32,11 +32,6 @@ settings:
   book-size:
     page-max: 2560
     total-multiplier: 0.98
-messages:
-  kick:
-    authentication-servers-down: ''
-    flying-player: Flying is not enabled on this server
-    flying-vehicle: Flying is not enabled on this server
 timings:
   enabled: true
   verbose: true
@@ -46,4 +41,9 @@ timings:
   - settings.bungeecord-addresses
   history-interval: 300
   history-length: 3600
+messages:
+  kick:
+    authentication-servers-down: ''
+    flying-player: Flying is not enabled on this server
+    flying-vehicle: Flying is not enabled on this server
 queue-light-updates: false

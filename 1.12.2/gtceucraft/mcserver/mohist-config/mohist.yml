@@ -49,7 +49,7 @@ mohist:
   forge_can_call_bukkit: false
   fail-on-unresolved-gameprofile: true
   CloseChatInConsole: false
-  showlogo: true
+  showlogo: false
   check_libraries: true
   support_nocmd: false
   watchdog_mohist: false

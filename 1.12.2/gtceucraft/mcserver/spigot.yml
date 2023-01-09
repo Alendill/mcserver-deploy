@@ -13,7 +13,20 @@
 config-version: 11
 settings:
   bungeecord: false
+  filter-creative-items: true
+  int-cache-limit: 1024
+  moved-wrongly-threshold: 0.0625
+  moved-too-quickly-multiplier: 10.0
+  item-dirty-ticks: 20
+  netty-threads: 4
+  late-bind: false
+  sample-count: 12
+  save-user-cache-on-stop-only: false
+  timeout-time: 90
+  restart-on-crash: true
+  restart-script: ./start.sh
   user-cache-size: 1000
+  player-shuffle: 0
   attribute:
     maxHealth:
       max: 2048.0
@@ -21,26 +34,7 @@ settings:
       max: 2048.0
     attackDamage:
       max: 2048.0
-  player-shuffle: 0
-  late-bind: false
-  save-user-cache-on-stop-only: false
-  sample-count: 12
-  netty-threads: 4
-  filter-creative-items: true
-  int-cache-limit: 1024
-  moved-wrongly-threshold: 0.0625
-  moved-too-quickly-multiplier: 10.0
-  item-dirty-ticks: 20
-  timeout-time: 90
-  restart-on-crash: true
-  restart-script: ./start.sh
-stats:
-  disable-saving: false
-  forced-stats: {}
 commands:
-  tab-complete: 0
-  silent-commandblock-console: false
-  log: true
   spam-exclusions:
   - /skill
   replace-commands:
@@ -48,12 +42,18 @@ commands:
   - summon
   - testforblock
   - tellraw
+  tab-complete: 0
+  silent-commandblock-console: false
+  log: true
+stats:
+  disable-saving: false
+  forced-stats: {}
+messages:
+  restart: Server is restarting
 advancements:
   disable-saving: false
   disabled:
   - minecraft:story/disabled
-messages:
-  restart: Server is restarting
 world-settings:
   default:
     verbose: true
