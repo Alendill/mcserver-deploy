@@ -20,7 +20,7 @@ logoutlocation:
   z: -237.76550451966037
   yaw: -82.99902
   pitch: 9.995967
-afk: true
+afk: false
 homes:
   home:
     world: world
