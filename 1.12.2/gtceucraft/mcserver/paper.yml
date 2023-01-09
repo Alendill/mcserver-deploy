@@ -11,17 +11,11 @@
 
 verbose: false
 config-version: 13
-timings:
-  enabled: true
-  verbose: true
-  server-name-privacy: false
-  hidden-config-entries:
-  - database
-  - settings.bungeecord-addresses
-  history-interval: 300
-  history-length: 3600
 settings:
   bungee-online-mode: true
+  book-size:
+    page-max: 2560
+    total-multiplier: 0.98
   sleep-between-chunk-saves: false
   load-permissions-yml-before-plugins: true
   region-file-cache-size: 256
@@ -38,9 +32,15 @@ settings:
   spam-limiter:
     tab-spam-increment: 10
     tab-spam-limit: 500
-  book-size:
-    page-max: 2560
-    total-multiplier: 0.98
+timings:
+  enabled: true
+  verbose: true
+  server-name-privacy: false
+  hidden-config-entries:
+  - database
+  - settings.bungeecord-addresses
+  history-interval: 300
+  history-length: 3600
 messages:
   kick:
     authentication-servers-down: ''

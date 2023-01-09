@@ -1,16 +1,17 @@
 ## ColorMOTD v1.5.3 Config
 # http://www.mcbbs.net/thread-448326-1-1.html
 Motd:
-- '&f基于&c树&e莓&a派&b4B&f的&bGTCEu&f服务器 \n&3服务器状态: %STATE%'
-- '&f基于&c树&e莓&a派&b4B&f的&bGTCEu&f服务器 \n&3服务器TPS: &e%TPS%'
+- '&f基于&c树&e莓&a派&b4B&f的&bGTCEu&f服务器 \n&f服务器状态: %STATE%'
+- '&f基于&c树&e莓&a派&b4B&f的&bGTCEu&f服务器 \n&f服务器TPS: &e%TPS%'
 OnlineMsg: '&a在线人数 &6%ONLINE%&7/&6%MAXPLAYER%'
-Players: []
-ServiceModeMOTD: '&c服务器维护中,请等待维护完成...'
+Players:
+- '&4&k_&c&k_&6&k_&e&k_&2&k_&a&k_&b&k_&3&k_&1&k_&9&k_&d&k_&5&k_&r'
+ServiceModeMOTD: '&4服&c务&6器&e维&2护&a中&b,&3请&1耐&9心&d等&5待&f(╯‵□′)╯︵┻━┻\n&b先有格雷后有天，世间万物板为先'
 ServiceModeKickCause: '&c服务器维护中,请等待维护完成再进入服务器!'
 useBungeeCord: false
 redisBungee: false
 AttributionServer: taobao
 TPSFormat: '0.00'
 showDelay: false
-UpdateChecker: true
+UpdateChecker: false
 ServiceMode: false

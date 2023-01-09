@@ -14,7 +14,6 @@ services:
       - -XshowSettings:vm
       - -Xms4G
       - -Xmx4G
-      - -Xss256K
       ################### CMS Config ###################
       - -XX:+UseConcMarkSweepGC
       - -XX:ParallelGCThreads=4
@@ -91,4 +90,4 @@ services:
     network_mode: "bridge"
     stdin_open: true
     tty: true
-    privileged: true
+    privileged: false
