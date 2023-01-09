@@ -2,3 +2,4 @@
 &6输入 &c/help&6 查看更多指令.
 &6输入 &c/list&6 查看在线玩家列表.
 &6在线玩家:&c {ONLINE} &6- 世界时间:&c {WORLDTIME12}
+&6当前TPS:&e {TPS}

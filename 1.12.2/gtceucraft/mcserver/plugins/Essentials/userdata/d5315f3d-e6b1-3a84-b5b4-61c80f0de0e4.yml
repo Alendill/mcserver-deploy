@@ -1,7 +1,7 @@
 lastAccountName: Pleiades
 timestamps:
-  login: 1673189721980
-  logout: 1673188658162
+  login: 1673233494052
+  logout: 1673199167078
   lastteleport: 1673193281308
   kits:
     tools: 1670297119778
@@ -15,11 +15,11 @@ lastlocation:
   pitch: 9.90279
 logoutlocation:
   world: world
-  x: -39.3244869899064
-  y: 77.0
-  z: -238.0659940028983
-  yaw: 276.87436
-  pitch: 35.179543
+  x: -54.414288847055424
+  y: 71.0
+  z: -244.50826460436903
+  yaw: -65.83207
+  pitch: 16.175188
 afk: false
 homes:
   home:

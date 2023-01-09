@@ -1,4 +1,4 @@
-version: "3"
+version: "3.9"
 
 services:
 
@@ -26,7 +26,7 @@ services:
       - -XX:+AlwaysPreTouch
       - -XX:+ParallelRefProcEnabled
       - -jar
-      - /mcserver/mohist-server.jar
+      - mohist-server.jar
     volumes:
       ###Big files and logs###
       - ${BIG_FILE_PATH}/world/:/mcserver/world/
@@ -60,3 +60,13 @@ services:
     stdin_open: true
     tty: true
     privileged: true
+    deploy:
+      update_config:
+        parallelism: 1
+        delay: 5s
+        order: stop-first
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 4
+        window: 120s
