@@ -86,7 +86,10 @@ services:
       - "26947:26947"
     deploy:
       restart_policy:
-        condition: on-failure
+        condition: any
+        delay: 10s
+        # max_attempts: 2
+        window: 20s
     network_mode: "bridge"
     stdin_open: true
     tty: true
