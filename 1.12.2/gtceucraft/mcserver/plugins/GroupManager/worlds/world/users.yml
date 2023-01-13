@@ -4,6 +4,11 @@ users:
     group: Builder
     subgroups: []
     permissions: []
+  b29de8cf-0e7e-3550-aa83-40de8a65113b:
+    lastname: ETO_M45
+    group: Builder
+    subgroups: []
+    permissions: []
   d5315f3d-e6b1-3a84-b5b4-61c80f0de0e4:
     lastname: Pleiades
     group: Builder

@@ -94,3 +94,10 @@ services:
     stdin_open: true
     tty: true
     privileged: false
+    healthcheck: 
+      test: ["CMD", "curl", "-f", "http://192.168.0.107:26947"]
+      interval: 1m
+      timeout: 5s
+      retries: 3
+      start_period: 3m
+      disable: true

@@ -1,26 +1,26 @@
 lastAccountName: Pleiades
 timestamps:
-  login: 1673313944665
-  logout: 1673272991262
-  lastteleport: 1673269455280
+  login: 1673596744263
+  logout: 1673586412736
+  lastteleport: 1673530847753
   kits:
     tools: 1670297119778
 ipAddress: 192.168.0.106
 lastlocation:
   world: world
-  x: -2501.699999988079
-  y: 24.0
-  z: 684.4784836995451
-  yaw: -81.919685
-  pitch: -15.852898
+  x: -1379.5
+  y: 81.0
+  z: 602.5
+  yaw: 23.959276
+  pitch: 40.918583
 logoutlocation:
   world: world
-  x: -44.862714227152566
-  y: 83.0
-  z: -241.43825760981758
-  yaw: 29.840332
-  pitch: 44.1985
-afk: false
+  x: -45.61266752891985
+  y: 71.0
+  z: -244.26364995678748
+  yaw: 56.477173
+  pitch: 0.05088417
+afk: true
 homes:
   home:
     world: world
@@ -73,11 +73,11 @@ homes:
     pitch: 29.443663
   ore:
     world: world
-    x: -968.9297930244782
+    x: -940.5912674554583
     y: 65.0
-    z: 714.2493314085799
-    yaw: -126.940186
-    pitch: 32.490376
+    z: 805.5950389182658
+    yaw: 249.43515
+    pitch: 33.649532
   tree_farm:
     world: world
     x: -20.92776191912902
@@ -94,8 +94,8 @@ homes:
     pitch: 21.775751
   oil:
     world: world
-    x: -2501.699999988079
-    y: 24.0
-    z: 684.4784836995451
-    yaw: -81.919685
-    pitch: -15.852898
+    x: -1379.7498894702442
+    y: 81.0
+    z: 602.322890376017
+    yaw: 10.632024
+    pitch: 36.20774

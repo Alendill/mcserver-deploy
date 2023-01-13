@@ -1,0 +1,20 @@
+lastAccountName: ETO_M45
+timestamps:
+  login: 1673450967842
+  lastteleport: 1673451221966
+  logout: 1673451250845
+ipAddress: 192.168.0.106
+lastlocation:
+  world: world
+  x: -129.90145955496365
+  y: 71.0
+  z: 141.52903094939796
+  yaw: 200.98651
+  pitch: 16.602465
+logoutlocation:
+  world: world
+  x: -44.9386004408598
+  y: 71.0
+  z: -240.14820984108476
+  yaw: 310.98477
+  pitch: 33.429333
