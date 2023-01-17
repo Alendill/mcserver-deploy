@@ -85,6 +85,9 @@ services:
     ports:
       - "26947:26947"
     deploy:
+      resources:
+        limits:
+          memory: 5G
       restart_policy:
         condition: any
         delay: 10s
