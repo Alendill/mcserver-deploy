@@ -1,5 +1,5 @@
 mcserver/plugins/GroupManager/backup
-mcserver/usercache.json
-mcserver/usernamecache.json
-mcserver/plugins/Essentials/userdata
+#mcserver/usercache.json
+#mcserver/usernamecache.json
+#mcserver/plugins/Essentials/userdata
 mcserver/plugins/Yum/monitor.log
