@@ -11,11 +11,7 @@
 # Forums: http://www.spigotmc.org/
 
 config-version: 11
-stats:
-  disable-saving: false
-  forced-stats: {}
 commands:
-  tab-complete: 0
   log: true
   spam-exclusions:
   - /skill
@@ -25,10 +21,8 @@ commands:
   - testforblock
   - tellraw
   silent-commandblock-console: false
+  tab-complete: 0
 settings:
-  bungeecord: false
-  save-user-cache-on-stop-only: false
-  sample-count: 12
   filter-creative-items: true
   int-cache-limit: 1024
   moved-wrongly-threshold: 0.0625
@@ -45,11 +39,17 @@ settings:
       max: 2048.0
     attackDamage:
       max: 2048.0
+  bungeecord: false
+  save-user-cache-on-stop-only: false
   user-cache-size: 1000
-  player-shuffle: 0
   late-bind: false
+  player-shuffle: 0
+  sample-count: 12
 messages:
   restart: Server is restarting
+stats:
+  disable-saving: false
+  forced-stats: {}
 advancements:
   disable-saving: false
   disabled:
@@ -57,14 +57,20 @@ advancements:
 world-settings:
   default:
     verbose: true
-    random-light-updates: false
-    save-structure-info: true
-    dragon-death-sound-radius: 0
     merge-radius:
-      exp: 3.0
       item: 2.5
-    wither-spawn-sound-radius: 0
+      exp: 3.0
+    arrow-despawn-rate: 1200
     view-distance: 5
+    wither-spawn-sound-radius: 0
+    entity-tracking-range:
+      players: 48
+      animals: 48
+      monsters: 48
+      misc: 32
+      other: 64
+    hanging-tick-frequency: 100
+    mob-spawn-range: 4
     growth:
       cactus-modifier: 100
       cane-modifier: 100
@@ -80,19 +86,19 @@ world-settings:
       hopper-transfer: 8
       hopper-check: 1
     hopper-amount: 1
-    mob-spawn-range: 4
-    entity-tracking-range:
-      players: 48
-      animals: 48
-      monsters: 48
-      misc: 32
-      other: 64
-    zombie-aggressive-towards-villager: true
-    nerf-spawner-mobs: false
-    arrow-despawn-rate: 1200
-    hanging-tick-frequency: 100
-    enable-zombie-pigmen-portal-spawns: true
-    item-despawn-rate: 6000
+    entity-activation-range:
+      animals: 32
+      monsters: 32
+      misc: 16
+      water: 16
+      tick-inactive-villagers: true
+    random-light-updates: false
+    save-structure-info: true
+    dragon-death-sound-radius: 0
+    seed-village: 10387312
+    seed-feature: 14357617
+    seed-monument: 10387313
+    seed-slime: 987234911
     hunger:
       jump-walk-exhaustion: 0.05
       jump-sprint-exhaustion: 0.2
@@ -110,13 +116,7 @@ world-settings:
     max-growth-height:
       cactus: 3
       reeds: 3
-    entity-activation-range:
-      animals: 32
-      monsters: 32
-      misc: 16
-      water: 16
-      tick-inactive-villagers: true
-    seed-village: 10387312
-    seed-feature: 14357617
-    seed-monument: 10387313
-    seed-slime: 987234911
+    item-despawn-rate: 6000
+    zombie-aggressive-towards-villager: true
+    nerf-spawner-mobs: false
+    enable-zombie-pigmen-portal-spawns: true
